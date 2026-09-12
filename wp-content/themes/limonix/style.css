@@ -1,0 +1,106 @@
+/*
+Theme Name: Limonix
+Theme URI: https://example.com/limonix
+Author: Kowshar Ahmed
+Author URI: https://example.com
+Description: Limonix is a clean, lightweight, and scalable WordPress starter theme built with proper escaping, translation-ready strings, and modern coding standards. It provides the essential template structure needed to build custom designs on top of it.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: limonix
+Tags: custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ==========================================================================
+   Base structure only — visual styling is intentionally minimal for now.
+   Additional styling should be added to assets/css/main.css and enqueued
+   via functions.php, keeping this file focused on the required theme header.
+   ========================================================================== */
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	line-height: 1.6;
+	color: #222222;
+	background: #ffffff;
+}
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-content {
+	flex: 1 0 auto;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.site-header,
+.site-footer {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.content-area {
+	float: left;
+	width: 100%;
+}
+
+.site.has-sidebar .content-area {
+	width: 68%;
+}
+
+.site.has-sidebar .widget-area {
+	float: right;
+	width: 28%;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
