@@ -1,5 +1,6 @@
 <?php
 
+
 trait TP_Link_Style_Trait {
 
     protected function tp_link_controls_style( $prefix = '', $label = 'Button', $selector = '',$layout = '' ) {
@@ -18,6 +19,7 @@ trait TP_Link_Style_Trait {
                 'design-layout' => $layout,
             ];
         }
+
 
         $this->start_controls_section(
             $prefix . '_style_section',
